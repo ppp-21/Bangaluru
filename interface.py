@@ -32,6 +32,5 @@ def predict_home_price():
         #return jsonify({"Message": f"Predicted House price is {price} Lakh"})
         return render_template('home.html', prediction_text = price)
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=False)   
